@@ -8,7 +8,7 @@ import classes from "./ErrorModal.module.css";
 const ErrorModal = (props) => {
   return (
     <div>
-      <div className={classes.backdrop} />
+      <div className={classes.backdrop} onClick={props.onClose} />
       <Card className={classes.modal}>
         <header className={classes.header}>
           <h2>{props.title}</h2>
@@ -19,7 +19,7 @@ const ErrorModal = (props) => {
         </div>
 
         <footer className={classes.actions}>
-          <Button>Close</Button>
+          <Button onClick={props.onClose}>Close</Button>
         </footer>
       </Card>
     </div>
