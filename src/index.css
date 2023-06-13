@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 220, 174);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 18%,
+    rgba(205, 92, 92, 1) 78%,
+    rgba(205, 92, 92, 1) 100%
+  );
+}
+
+body {
+  margin: 0;
+}
